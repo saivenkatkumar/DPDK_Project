@@ -1,0 +1,19 @@
+Steps To be do for project: How to create a TPC message parser in DPDK
+
+1. Install Required Dependencies
+    Here we need to Update system packages and install essential build tools and dependencies
+    "brew update"
+
+    Later, Install some dependencies for building DPDK on macOS, but please note that DPDK is generally optimized for Linux environments, and some features may not work the same on macOS.
+    "brew install meson ninja cmake libnuma"
+
+2. Download and Install DPDK
+    Download the DPDK source code from the official DPDK repository.
+    "git clone https://github.com/DPDK/dpdk.git"
+    "cd dpdk"
+
+    Build and compile DPDK:
+    "meson setup build"
+    "ninja -C build"
+    
+3. Load Necessary Kernel Modules
